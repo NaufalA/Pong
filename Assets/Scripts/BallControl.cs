@@ -32,18 +32,17 @@ public class BallControl : MonoBehaviour
 
 		if (direction < 1.0f)
 		{
-			rigidbody2D.velocity = new Vector2(-initialForceX, randomInitialForceY);
+			rigidbody2D.velocity = Vector2.ClampMagnitude(new Vector2(-initialForceX, randomInitialForceY), 10.0f);
 		}
 		else
 		{
-			rigidbody2D.velocity = new Vector2(initialForceX, randomInitialForceY);
+			rigidbody2D.velocity = Vector2.ClampMagnitude(new Vector2(initialForceX, randomInitialForceY), 10.0f);
 		}
 	}
 
 	public void RestartBall()
 	{
 		ResetBall();
-
 
 		Invoke("PushBall", 2);
 	}
