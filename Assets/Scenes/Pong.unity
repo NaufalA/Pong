@@ -387,12 +387,12 @@ PrefabInstance:
     - target: {fileID: 7670401314577952576, guid: 5f2fd4ef19b0a2d0c9cd22dec45f2668,
         type: 3}
       propertyPath: upKey
-      value: 105
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 7670401314577952576, guid: 5f2fd4ef19b0a2d0c9cd22dec45f2668,
         type: 3}
       propertyPath: downKey
-      value: 107
+      value: 108
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f2fd4ef19b0a2d0c9cd22dec45f2668, type: 3}
